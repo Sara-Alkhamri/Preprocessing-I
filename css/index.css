@@ -138,7 +138,7 @@ html {
   background: #56737c;
 }
 .container {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
 }
 header {
@@ -148,7 +148,49 @@ header {
   display: flex;
   justify-content: center;
 }
-header nav a {
-  text-decoration: none;
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav a {
+    text-decoration: none;
+    color: darkgray;
+  }
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .intro {
+  padding: 10px;
+}
+.main-content .intro h2 {
+  font-size: 2rem;
+  color: darkgray;
+}
+.main-content .intro h2 p {
+  flood-color: red;
+}
+.middle-content {
+  display: flex;
+}
+.middle-content .skills {
+  padding: 10px;
+}
+.middle-content .skills h3 {
+  font-size: 2rem;
+  color: darkgray;
+}
+.middle-content .skills h3 p {
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.middle-content .history {
+  padding: 10px;
+}
+.middle-content .history h4 {
+  font-size: 2rem;
   color: darkgray;
 }

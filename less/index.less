@@ -66,12 +66,12 @@ html {
 //variables
 @main-color:darkgray;
 @font-family: "times new roman", Times, serif;
-
+@font-size: 2rem;
 //mixins
 
 
 .container {
-	width: 880px;
+	max-width: 880px;
 	margin: 0 auto;
 }
 
@@ -82,11 +82,67 @@ header {
 	padding: 20px 0;
 	display: flex;
 	justify-content: center;
-	nav {
-		//  justify-content: space-between;
-		a {
-			text-decoration: none;
-			color: @main-color;
+
+	@media ( max-width: 500px ) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+nav {
+	
+	a {
+	text-decoration: none;
+	color: @main-color;
+	
+
+		}
+	}
+}
+}
+.main-content {
+	display: flex;
+	justify-content: space-between;
+	// margin: 15px;
+	// padding: 10px;
+	
+.intro {
+	padding: 10px;
+
+h2 {
+	font-size: @font-size;
+	color: @main-color;
+	p{
+		flood-color: red;
+				
+
+			}
+		}
+	}
+}
+
+.middle-content {
+	display:flex;
+	
+
+.skills {
+	padding: 10px;
+	h3 {
+		font-size: @font-size;
+		color: @main-color;
+		p {
+			flex-wrap: wrap;
+		margin-top: 20px;	
+
+		}
+	}
+
+}
+}
+.middle-content .history {
+	padding: 10px;
+	h4{
+		font-size: @font-size;
+		color: @main-color;
+		p {
 
 		}
 	}
