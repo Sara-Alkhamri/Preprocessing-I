@@ -182,17 +182,20 @@ header nav a {
 .main-content {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 @media (max-width: 500px) {
   .main-content {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
 }
 .middle-content {
   display: flex;
   border-top: 1px dashed black;
   margin: 20px 0;
+  padding: 20px;
 }
 .middle-content .skills {
   margin-top: 20px;
@@ -218,7 +221,10 @@ footer {
   padding: 20px 0;
   display: flex;
   justify-content: center;
+}
+footer nav a {
   text-decoration: none;
+  color: darkgray;
 }
 @media (max-width: 500px) {
   text-decoration: none;
